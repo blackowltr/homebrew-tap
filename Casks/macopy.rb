@@ -12,4 +12,13 @@ cask "macopy" do
   app "Macopy.app"
 
   uninstall quit: "com.blackowltr.macopy"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Macopy.app"],
+                   sudo: false
+    system_command "/usr/bin/codesign",
+                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/Macopy.app"],
+                   sudo: false
+  end
 end

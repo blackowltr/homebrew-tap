@@ -1,6 +1,6 @@
 cask "macopy" do
   version "1.0.0"
-  sha256 "615103df0bd5229b68fe4542b913b3630bb4a594aade1b7957c6fb11eaddd60f"
+  sha256 "59cfb565ac5670cd01074952eaafdc7fa32baa15b8c1f86f1f2431b36e4df420"
 
   url "https://github.com/blackowltr/Macopy/releases/download/v#{version}/Macopy-#{version}.dmg"
   name "Macopy"

@@ -7,7 +7,7 @@ cask "macopy" do
   desc "Clipboard history manager for macOS"
   homepage "https://github.com/blackowltr/Macopy"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Macopy.app"
 
